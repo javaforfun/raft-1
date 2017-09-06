@@ -46,8 +46,8 @@ This diagram, of which I'm quite proud, shows the possible transitions:
 |       |       ,->---' `--<-.      |                        \                |
 |       v      /              \     v                         \               |
 |  +----------+                +----------+                    +----------+   |
-|  |          | ---AddVoter--> |          | -log caught up --> |          |   |
-|  | nonvoter |                | staging  |                    |  voter   |   |
+|  |          | ---AddVoter--> |          | -log caught up     |          |   |
+|  | nonvoter |                | staging  |  then AddNode -->  |  voter   |   |
 |  |          | <-DemoteVoter- |          |                 ,- |          |   |
 |  +----------+         \      +----------+                /   +----------+   |
 |                        \                                /                   |
